@@ -17,7 +17,7 @@ pub fn horizontal_sep(length: u8, color: Option<Color>) -> String {
         container.push('-')
     }
     if let Some(c) = color {
-        let colored = container.on_color(c);
+        let colored = container.color(c);
         println!("{colored}")
     }
     container // Ownership moved to whatever captures this.
